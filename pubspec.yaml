@@ -1,9 +1,7 @@
 name: flutter_clean_services
 version: 0.1.0
 publish_to: "none"
-description: >-
-  Librería base de servicios y utilidades para Flutter usando arquitectura
-  limpia, networking moderno, persistencia local e inyección de dependencias.
+description: Librería base de servicios y utilidades para Flutter usando arquitectura limpia, Dio, Retrofit, GetIt y BLoC.
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
