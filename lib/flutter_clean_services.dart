@@ -21,3 +21,4 @@ export 'src/domain/usecases/get_users_use_case.dart';
 export 'src/presentation/bloc/user_bloc.dart';
 export 'src/presentation/bloc/user_event.dart';
 export 'src/presentation/bloc/user_state.dart';
+export 'src/widgets/flutter_widget_catalog.dart';
