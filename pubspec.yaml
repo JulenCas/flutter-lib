@@ -11,28 +11,99 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # Cliente HTTP y generación declarativa de servicios REST.
-  dio: ^5.7.0
-  retrofit: ^4.4.1
-
-  # Inyección de dependencias y gestión de estados.
-  get_it: ^8.0.3
+  # STATE MANAGEMENT: Provider clásico para inyección simple y ChangeNotifier.
+  provider: ^6.1.2
+  # STATE MANAGEMENT: Riverpod con hooks para providers seguros y testables.
+  hooks_riverpod: ^2.6.1
+  # STATE MANAGEMENT: Bloc/Cubit base para eventos, estados y Cubits puros.
+  bloc: ^8.1.4
+  # STATE MANAGEMENT: integración Flutter de Bloc/Cubit para widgets reactivos.
   flutter_bloc: ^8.1.6
-  equatable: ^2.0.7
+  # STATE MANAGEMENT: Signals reactivos granulares para UI declarativa moderna.
+  signals_flutter: ^5.5.0
 
-  # Modelado inmutable, serialización y persistencia local.
-  freezed_annotation: ^2.4.4
-  json_annotation: ^4.9.0
+  # UI/ANIMATION: animaciones declarativas y composables sobre widgets Flutter.
+  flutter_animate: ^4.5.2
+  # UI/ANIMATION: reproducción de animaciones Lottie en JSON.
+  lottie: ^3.1.3
+  # UI/THEMING: utilidades de color usadas por Material 3 y temas dinámicos.
+  material_color_utilities: ^0.11.1
+  # UI/DESIGN SYSTEM: componentes Fluent UI para interfaces estilo Microsoft.
+  fluent_ui: ^4.9.2
+
+  # NETWORKING: cliente HTTP robusto con interceptores, timeouts y adapters.
+  dio: ^5.7.0
+  # NETWORKING: definición declarativa de APIs REST sobre Dio.
+  retrofit: ^4.4.1
+  # NETWORKING: cliente GraphQL con cache, links y widgets Flutter.
+  graphql_flutter: ^5.2.0
+  # NETWORKING: cliente HTTP estándar para integraciones simples o utilidades.
+  http: ^1.2.2
+
+  # PERSISTENCE: base local NoSQL liviana para cache y datos offline.
   hive: ^2.2.3
+  # PERSISTENCE: base SQL reactiva y tipada sobre SQLite.
+  drift: ^2.22.1
+  # PERSISTENCE: almacenamiento de preferencias simples por plataforma.
   shared_preferences: ^2.3.3
+  # PERSISTENCE: almacenamiento seguro para tokens y secretos por plataforma.
+  flutter_secure_storage: ^9.2.2
+  # PERSISTENCE: acceso directo a SQLite cuando no se requiere abstracción Drift.
+  sqflite: ^2.4.1
+
+  # DI/UTILS: service locator para registrar repositorios, casos de uso y BLoCs.
+  get_it: ^8.0.3
+  # DI/UTILS: anotaciones para generar registros de inyección de dependencias.
+  injectable: ^2.5.0
+  # DI/UTILS: igualdad por valor para eventos, estados y objetos de dominio.
+  equatable: ^2.0.7
+  # DI/UTILS: anotaciones runtime usadas por Freezed.
+  freezed_annotation: ^2.4.4
+  # DI/UTILS: anotaciones runtime usadas por JsonSerializable.
+  json_annotation: ^4.9.0
+  # DI/UTILS: internacionalización, formatos de fecha, número y moneda.
+  intl: ^0.19.0
+  # DI/UTILS: traducciones y cambio de locale simplificado en Flutter.
+  easy_localization: ^3.0.7
+  # DI/UTILS: solicitud y consulta de permisos del dispositivo.
+  permission_handler: ^11.3.1
+  # DI/UTILS: rutas de documentos, cache y almacenamiento de la app.
+  path_provider: ^2.1.5
+  # DI/UTILS: logging estructurado para depuración y observabilidad.
+  logger: ^2.5.0
+  # DI/UTILS: apertura de URLs, deep links y recursos externos.
+  url_launcher: ^6.3.1
+  # DI/UTILS: información de dispositivo y plataforma para diagnósticos.
+  device_info_plus: ^11.1.1
+  # DI/UTILS: estado de conectividad para decisiones online/offline.
+  connectivity_plus: ^6.1.0
 
 dev_dependencies:
+  # TESTING: utilidades oficiales para tests unitarios y de widgets Flutter.
   flutter_test:
     sdk: flutter
+  # TESTING: pruebas end-to-end/integración incluidas en el SDK de Flutter.
+  integration_test:
+    sdk: flutter
+  # TESTING: mocks generados para repositorios, servicios y casos de uso.
+  mockito: ^5.4.4
+  # TESTING: helpers específicos para verificar emisiones de Bloc/Cubit.
+  bloc_test: ^9.1.7
 
-  # Generadores usados por Retrofit, Freezed y JsonSerializable.
+  # CODEGEN: ejecutor central de generadores de Retrofit, Freezed, Hive y Drift.
   build_runner: ^2.4.13
+  # CODEGEN: generador de implementaciones Retrofit para servicios REST.
   retrofit_generator: ^9.1.5
+  # CODEGEN: generador de clases inmutables, unions y copyWith.
   freezed: ^2.5.7
+  # CODEGEN: generador de serialización JSON para modelos y DTOs.
   json_serializable: ^6.9.0
+  # CODEGEN: generador de TypeAdapters de Hive.
+  hive_generator: ^2.0.1
+  # CODEGEN: generador de DAOs, tablas y queries tipadas de Drift.
+  drift_dev: ^2.22.1
+  # CODEGEN: generador de módulos y registros para Injectable/GetIt.
+  injectable_generator: ^2.6.2
+
+  # LINTS: reglas recomendadas para mantener calidad y consistencia Flutter.
   flutter_lints: ^5.0.0
