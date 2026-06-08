@@ -1,0 +1,38 @@
+name: flutter_clean_services
+version: 0.1.0
+publish_to: "none"
+description: Librería base de servicios y utilidades para Flutter usando arquitectura limpia, Dio, Retrofit, GetIt y BLoC.
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Cliente HTTP y generación declarativa de servicios REST.
+  dio: ^5.7.0
+  retrofit: ^4.4.1
+
+  # Inyección de dependencias y gestión de estados.
+  get_it: ^8.0.3
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.7
+
+  # Modelado inmutable, serialización y persistencia local.
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  hive: ^2.2.3
+  shared_preferences: ^2.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Generadores usados por Retrofit, Freezed y JsonSerializable.
+  build_runner: ^2.4.13
+  retrofit_generator: ^9.1.5
+  freezed: ^2.5.7
+  json_serializable: ^6.9.0
+  flutter_lints: ^5.0.0
