@@ -107,3 +107,8 @@ dev_dependencies:
 
   # LINTS: reglas recomendadas para mantener calidad y consistencia Flutter.
   flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - assets/translations/
+    - assets/lottie/loading.json
