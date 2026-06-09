@@ -1,0 +1,20 @@
+{
+  "app": { "title": "Clean Architecture" },
+  "nav": { "users": "Users", "posts": "Posts", "forms": "Forms" },
+  "actions": { "refresh": "Refresh", "retry": "Retry", "createUser": "Create user", "createPost": "Create post" },
+  "states": { "loading": "Loading data..." },
+  "forms": {
+    "userTitle": "New user",
+    "postTitle": "New post",
+    "name": "Name",
+    "email": "Email",
+    "userId": "User ID",
+    "title": "Title",
+    "body": "Body",
+    "required": "Required field",
+    "emailError": "Invalid email",
+    "numberError": "Must be a number",
+    "bodyError": "Write at least 10 characters"
+  },
+  "permissions": { "contacts": "Request contacts permission", "granted": "Permission granted", "denied": "Permission denied" }
+}

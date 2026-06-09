@@ -1,0 +1,20 @@
+{
+  "app": { "title": "Arquitectura Limpia" },
+  "nav": { "users": "Usuarios", "posts": "Posts", "forms": "Formularios" },
+  "actions": { "refresh": "Actualizar", "retry": "Reintentar", "createUser": "Crear usuario", "createPost": "Crear post" },
+  "states": { "loading": "Cargando datos..." },
+  "forms": {
+    "userTitle": "Nuevo usuario",
+    "postTitle": "Nuevo post",
+    "name": "Nombre",
+    "email": "Correo",
+    "userId": "ID usuario",
+    "title": "Título",
+    "body": "Contenido",
+    "required": "Campo obligatorio",
+    "emailError": "Correo inválido",
+    "numberError": "Debe ser un número",
+    "bodyError": "Escribe al menos 10 caracteres"
+  },
+  "permissions": { "contacts": "Solicitar permiso de contactos", "granted": "Permiso concedido", "denied": "Permiso denegado" }
+}
